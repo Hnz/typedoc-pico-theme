@@ -34,13 +34,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'latest'
-          cache: 'pnpm'
-
-      - name: ⚡ Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: 🔨 Build library and docs
-        run: pnpm build
+        run: npm run build
 
       - name: ⚙️ Configure pages
         uses: actions/configure-pages@v4
