@@ -1,0 +1,550 @@
+/*
+ * Define colors
+ */
+
+:root {
+    /* PicoCSS colors */
+    --pico-color-red-450: #ee402e;
+    --pico-color-pink-450: #f42c6f;
+    --pico-color-fuchsia-450: #ed2aac;
+    --pico-color-purple-450: #c652dc;
+    --pico-color-violet-450: #9b71cf;
+    --pico-color-indigo-450: #8577dd;
+    --pico-color-blue-450: #5c7ef8;
+    --pico-color-azure-450: #018cd4;
+    --pico-color-cyan-450: #059494;
+    --pico-color-jade-450: #029764;
+    --pico-color-green-450: #409614;
+    --pico-color-lime-450: #6c8f00;
+    --pico-color-yellow-450: #908501;
+    --pico-color-amber-450: #a77c00;
+    --pico-color-pumpkin-450: #bf6e00;
+    --pico-color-orange-450: #e74b1a;
+    --pico-color-sand-450: #888377;
+    --pico-color-grey-450: #808080;
+    --pico-color-zinc-450: #7b8495;
+    --pico-color-slate-450: #7385a9;
+
+    --pico-color-red-550: #c52f21;
+    --pico-color-pink-550: #c72259;
+    --pico-color-fuchsia-550: #c1208b;
+    --pico-color-purple-550: #aa40bf;
+    --pico-color-violet-550: #8352c5;
+    --pico-color-indigo-550: #655cd6;
+    --pico-color-blue-550: #2060df;
+    --pico-color-azure-550: #0172ad;
+    --pico-color-cyan-550: #047878;
+    --pico-color-jade-550: #007a50;
+    --pico-color-green-550: #33790f;
+    --pico-color-lime-550: #577400;
+    --pico-color-yellow-550: #756b00;
+    --pico-color-amber-550: #876400;
+    --pico-color-pumpkin-550: #9c5900;
+    --pico-color-orange-550: #bd3c13;
+    --pico-color-sand-550: #6e6a60;
+    --pico-color-grey-550: #6a6a6a;
+    --pico-color-zinc-550: #646b79;
+    --pico-color-slate-550: #5d6b89;
+
+    /* Light */
+    --light-color-background: #ffffff;
+    --light-color-background-secondary: rgb(243, 244.5, 246.75);
+    --light-color-background-navbar: rgba(255, 255, 255, 0.8);
+    --light-color-background-overlay: rgba(232, 234, 237, 0.75);
+
+    --light-color-accent: rgba(255, 255, 255, 0.8);
+
+    --light-color-text: #373c44;
+    --light-color-text-aside: #5d6b89;
+
+    --light-color-link: #0172ad;
+
+    --light-color-warning-border: #cfd5e2;
+    --light-color-background-warning: #fff8c5;
+
+    --light-color-alert-note: #0969da;
+    --light-color-alert-tip: #1a7f37;
+    --light-color-alert-important: #8250df;
+    --light-color-alert-warning: #9a6700;
+    --light-color-alert-caution: #cf222e;
+
+    /* Dark */
+    --dark-color-background: rgb(19, 22.5, 30.5);
+    --dark-color-background-secondary: rgb(26, 30.5, 40.25);
+    --dark-color-background-navbar: rgba(19, 22.5, 30.5, 0.9);
+    --dark-color-background-overlay: rgba(7.5, 8.5, 10, 0.75);
+
+    --dark-color-accent: rgba(32, 38, 50, 0.9);
+
+    --dark-color-text: #c2c7d0;
+    --dark-color-text-aside: #969eaf;
+
+    --dark-color-link: #4493f8;
+
+    --dark-color-warning-border: #2a3140;
+    --dark-color-background-warning: #282215;
+
+    --dark-color-alert-note: #1f6feb;
+    --dark-color-alert-tip: #238636;
+    --dark-color-alert-important: #8957e5;
+    --dark-color-alert-warning: #9e6a03;
+    --dark-color-alert-caution: #da3633;
+
+    /* Link colors */
+    --color-warning-text: var(--color-text);
+    --color-contrast-text: var(--color-text);
+    --color-icon-background: var(--color-background);
+    --color-focus-outline: var(--color-accent);
+
+    /* Icon colors */
+    --light-color-ts-keyword: var(--pico-color-lime-550);
+    --light-color-ts-project: var(--pico-color-cyan-550);
+    --light-color-ts-module: var(--light-color-ts-project);
+    --light-color-ts-namespace: var(--light-color-ts-project);
+    --light-color-ts-enum: var(--pico-color-yellow-550);
+    --light-color-ts-enum-member: var(--light-color-ts-enum);
+    --light-color-ts-variable: var(--pico-color-indigo-550);
+    --light-color-ts-function: var(--pico-color-violet-550);
+    --light-color-ts-class: var(--pico-color-blue-550);
+    --light-color-ts-interface: var(--pico-color-jade-550);
+    --light-color-ts-constructor: var(--light-color-ts-class);
+    --light-color-ts-property: var(--pico-color-pumpkin-550);
+    --light-color-ts-method: var(--pico-color-fuchsia-550);
+    --light-color-ts-reference: var(--pico-color-pink-550);
+    --light-color-ts-call-signature: var(--light-color-ts-method);
+    --light-color-ts-index-signature: var(--light-color-ts-property);
+    --light-color-ts-constructor-signature: var(--light-color-ts-constructor);
+    --light-color-ts-parameter: var(--light-color-ts-variable);
+    --light-color-ts-type-parameter: var(--pico-color-jade-550);
+    --light-color-ts-accessor: var(--pico-color-red-550);
+    --light-color-ts-get-signature: var(--light-color-ts-accessor);
+    --light-color-ts-set-signature: var(--light-color-ts-accessor);
+    --light-color-ts-type-alias: var(--pico-color-slate-550);
+    --light-color-document: var(--pico-color-amber-550);
+
+    --dark-color-ts-keyword: var(--pico-color-lime-450);
+    --dark-color-ts-project: var(--pico-color-cyan-450);
+    --dark-color-ts-module: var(--dark-color-ts-project);
+    --dark-color-ts-namespace: var(--dark-color-ts-project);
+    --dark-color-ts-enum: var(--pico-color-yellow-450);
+    --dark-color-ts-enum-member: var(--dark-color-ts-enum);
+    --dark-color-ts-variable: var(--pico-color-indigo-450);
+    --dark-color-ts-function: var(--pico-color-violet-450);
+    --dark-color-ts-class: var(--pico-color-blue-450);
+    --dark-color-ts-interface: var(--pico-color-jade-450);
+    --dark-color-ts-constructor: var(--dark-color-ts-class);
+    --dark-color-ts-property: var(--pico-color-pumpkin-450);
+    --dark-color-ts-method: var(--pico-color-fuchsia-450);
+    --dark-color-ts-reference: var(--pico-color-pink-450);
+    --dark-color-ts-call-signature: var(--dark-color-ts-method);
+    --dark-color-ts-index-signature: var(--dark-color-ts-property);
+    --dark-color-ts-constructor-signature: var(--dark-color-ts-constructor);
+    --dark-color-ts-parameter: var(--dark-color-ts-variable);
+    --dark-color-ts-type-parameter: var(--pico-color-jade-450);
+    --dark-color-ts-accessor: var(--pico-color-red-450);
+    --dark-color-ts-get-signature: var(--dark-color-ts-accessor);
+    --dark-color-ts-set-signature: var(--dark-color-ts-accessor);
+    --dark-color-ts-type-alias: var(--pico-color-slate-450);
+    --dark-color-document: var(--pico-color-amber-450);
+
+    /* Extra */
+    --light-code-background: rgb(243, 244.5, 246.75);
+    --light-color-active-menu-item: rgb(243, 244.5, 246.75);
+    --dark-code-background: rgb(26, 30.5, 40.25);
+    --dark-color-active-menu-item: rgb(26, 30.5, 40.25);
+    --dim-toolbar-contents-height: 5rem;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-background-navbar: var(--light-color-background-navbar);
+        --color-background-overlay: var(--light-color-background-overlay);
+        --color-warning-border: var(--light-color-warning-border);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background-navbar: var(--dark-color-background-navbar);
+        --color-background-overlay: var(--dark-color-background-overlay);
+        --color-warning-border: var(--dark-color-warning-border);
+    }
+}
+
+:root[data-theme="light"] {
+    --color-background-navbar: var(--light-color-background-navbar);
+    --color-background-overlay: var(--light-color-background-overlay);
+    --color-warning-border: var(--light-color-warning-border);
+}
+
+:root[data-theme="dark"] {
+    --color-background-navbar: var(--dark-color-background-navbar);
+    --color-background-overlay: var(--dark-color-background-overlay);
+    --color-warning-border: var(--dark-color-warning-border);
+}
+
+/*
+ * Define fonts
+ */
+
+:root {
+    --font-family-emoji:
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-family-text:
+        system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica,
+        Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
+    --font-family-code:
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace, var(--font-family-emoji);
+
+    --line-height: 1.5;
+    --font-weight: 400;
+    --font-size: 100%;
+    --text-underline-offset: 0.1rem;
+    --border-radius: 0.25rem;
+    --border-width: 0.0625rem;
+    --outline-width: 0.125rem;
+}
+
+body {
+    font-family: var(--font-family-text);
+}
+
+/*
+ * Links
+ */
+
+.tsd-accordion-details a,
+.tsd-accordion a,
+.tsd-page-toolbar a.title {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.tsd-accordion-details a:hover,
+.tsd-page-toolbar a.title:hover,
+.tsd-accordion a:hover,
+.tsd-anchor-icon {
+    color: var(--color-text-aside);
+}
+
+.tsd-kind-class {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.tsd-index-link,
+.tsd-page-navigation a:hover {
+    text-decoration: none;
+}
+
+.tsd-index-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a code,
+.tsd-sources a,
+.tsd-page-navigation a:hover {
+    color: var(--color-link);
+}
+
+a.external[target="_blank"] {
+    background-image: none;
+    padding-right: 0px;
+}
+
+/*
+ * Tables
+ */
+
+table {
+    margin: 1em 0;
+}
+
+.tsd-typography th,
+.tsd-typography td {
+    padding: 8px;
+    text-align: left;
+}
+
+.tsd-typography th {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.tsd-typography tr:nth-child(2n) {
+    background-color: var(--color-background-code);
+}
+
+/*
+ * Horizontal line
+ */
+
+.tsd-typography hr {
+    color: var(--color-accent);
+}
+
+/*
+ * Buttons
+ */
+/*
+button {
+    background-color: var(--color-background-navbar);
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+}
+
+pre > button {
+    background-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    border: none;
+    opacity: 1;
+    top: 8px;
+    padding: 4px 8px;
+}
+*/
+/*
+ * Checkbox
+ */
+
+.tsd-filter-input input[type="checkbox"],
+.tsd-filter-input svg {
+    width: 1em;
+    height: 1em;
+}
+
+.tsd-filter-input svg {
+    border-radius: 2px;
+}
+
+.tsd-checkbox-background {
+    fill: var(--color-background);
+    stroke: var(--color-accent);
+    stroke-width: 6px;
+}
+
+input[type="checkbox"]:checked ~ svg .tsd-checkbox-background {
+    fill: var(--color-accent);
+}
+
+.tsd-checkbox-checkmark {
+    color: var(--color-text);
+}
+
+/*
+ * Select
+ */
+
+select {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-accent);
+    border-radius: 6px;
+    padding: 8px;
+    font-family: inherit;
+}
+
+/*
+ * Code blocks
+ */
+/*
+code,
+pre {
+    border: none;
+    border-radius: 6px;
+    margin: 1em 0;
+    background-color: var(--color-background-secondary);
+    color: var(--color-text);
+    font-family: var(--font-family-code);
+}
+
+code.tsd-tag {
+    background-color: var(--color-accent);
+    border: unset;
+}
+*/
+/*
+ * Warnings
+ */
+
+.warning {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-warning-border);
+    border-radius: 6px;
+}
+
+/*
+ * Topbar
+ */
+
+.tsd-page-toolbar {
+    background-color: var(--color-background-navbar);
+    border-bottom-color: var(--color-accent);
+
+    /* padding-block: 2rem; */
+    font-size: 125%;
+}
+
+.tsd-toolbar-contents a.title {
+    font-size: 150%;
+}
+
+.tsd-toolbar-contents a.title:hover {
+    color: var(--color-text);
+}
+
+/*
+ * Search
+ */
+
+#tsd-search-trigger {
+    width: unset;
+    border: unset;
+    background-color: unset;
+    transition: opacity 0.15s ease-in-out;
+}
+
+#tsd-search-trigger:hover {
+    opacity: 1;
+}
+
+#tsd-search-input,
+#tsd-search-input:focus-visible {
+    background-color: transparent;
+    border: 1px solid var(--color-focus-outline);
+}
+
+#tsd-search-status:not(:empty) {
+    min-height: unset;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#tsd-search-results > li:is(:hover, [aria-selected="true"]) {
+    background-color: color-mix(in srgb, var(--color-text-aside), #0000 88%);
+}
+
+#tsd-search-results > li > a:hover {
+    text-decoration: unset;
+}
+
+#tsd-overlay {
+    background-color: var(--color-background-overlay);
+}
+
+/*
+ * Baseboard
+ */
+
+footer {
+    border-top-color: var(--color-accent);
+}
+
+/*
+ * Side navigations
+ */
+
+.tsd-navigation a {
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.tsd-navigation > a {
+    display: none;
+}
+
+/*
+ * Type definition groups
+ */
+
+.tsd-index-panel,
+.tsd-member-group {
+    background-color: var(--color-background);
+    padding: 16px;
+    border: 1px var(--color-accent) solid;
+    border-radius: 6px;
+}
+
+.tsd-panel > h1,
+.tsd-panel > h2,
+.tsd-panel > h3 {
+    margin-top: 0px;
+}
+
+.tsd-panel-group.tsd-index-group details {
+    margin: 0px;
+}
+
+.tsd-member-group .tsd-member:last-child {
+    margin-bottom: 0px;
+}
+
+.tsd-signature {
+    border: 1px solid var(--color-accent);
+    border-radius: 6px;
+}
+
+.tsd-signatures .tsd-signature {
+    border-color: var(--color-accent);
+    border-radius: 0px;
+}
+
+.tsd-description .tsd-signatures .tsd-signature {
+    border-radius: 6px;
+}
+
+.tsd-full-hierarchy:not(:last-child) {
+    border-bottom: var(--color-accent);
+}
+
+/*
+ * Footer
+ */
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-text-aside);
+}
+
+/*
+ * Fix collapsed margin
+ */
+
+.tsd-accordion-summary > h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tsd-page-navigation:not([open]) > .tsd-accordion-summary {
+    margin-bottom: 0px;
+}
+
+/*
+ * Fix collapse arrows position
+ */
+
+.tsd-accordion-summary svg {
+    transition: transform 0.1s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*
+ * Set breadcrumb color
+ */
+
+.tsd-breadcrumb a {
+    color: rgb(186.75, 150.5, 43.75);
+}
