@@ -227,6 +227,7 @@ body {
 .tsd-accordion a:hover,
 .tsd-anchor-icon {
     color: var(--color-text-aside);
+    text-decoration: underline;
 }
 
 .tsd-kind-class {
