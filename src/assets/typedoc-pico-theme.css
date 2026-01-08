@@ -257,29 +257,6 @@ a.external[target="_blank"] {
 }
 
 /*
- * Tables
- */
-
-table {
-    margin: 1em 0;
-}
-
-.tsd-typography th,
-.tsd-typography td {
-    padding: 8px;
-    text-align: left;
-}
-
-.tsd-typography th {
-    background-color: var(--color-background);
-    color: var(--color-text);
-}
-
-.tsd-typography tr:nth-child(2n) {
-    background-color: var(--color-background-code);
-}
-
-/*
  * Horizontal line
  */
 
@@ -287,102 +264,6 @@ table {
     color: var(--color-accent);
 }
 
-/*
- * Buttons
- */
-/*
-button {
-    background-color: var(--color-background-navbar);
-    color: var(--color-text);
-    border: 1px solid var(--color-accent);
-    border-radius: 6px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.1s ease-in-out;
-}
-
-button:hover {
-    background-color: var(--color-accent);
-}
-
-pre > button {
-    background-color: transparent;
-    transition: background-color 0.1s ease-in-out;
-    border: none;
-    opacity: 1;
-    top: 8px;
-    padding: 4px 8px;
-}
-*/
-/*
- * Checkbox
- */
-
-.tsd-filter-input input[type="checkbox"],
-.tsd-filter-input svg {
-    width: 1em;
-    height: 1em;
-}
-
-.tsd-filter-input svg {
-    border-radius: 2px;
-}
-
-.tsd-checkbox-background {
-    fill: var(--color-background);
-    stroke: var(--color-accent);
-    stroke-width: 6px;
-}
-
-input[type="checkbox"]:checked ~ svg .tsd-checkbox-background {
-    fill: var(--color-accent);
-}
-
-.tsd-checkbox-checkmark {
-    color: var(--color-text);
-}
-
-/*
- * Select
- */
-
-select {
-    background-color: var(--color-background);
-    border: 1px solid var(--color-accent);
-    border-radius: 6px;
-    padding: 8px;
-    font-family: inherit;
-}
-
-/*
- * Code blocks
- */
-/*
-code,
-pre {
-    border: none;
-    border-radius: 6px;
-    margin: 1em 0;
-    background-color: var(--color-background-secondary);
-    color: var(--color-text);
-    font-family: var(--font-family-code);
-}
-
-code.tsd-tag {
-    background-color: var(--color-accent);
-    border: unset;
-}
-*/
-/*
- * Warnings
- */
-
-.warning {
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--color-warning-border);
-    border-radius: 6px;
-}
 
 /*
  * Topbar
@@ -441,71 +322,6 @@ code.tsd-tag {
 
 #tsd-overlay {
     background-color: var(--color-background-overlay);
-}
-
-/*
- * Baseboard
- */
-
-footer {
-    border-top-color: var(--color-accent);
-}
-
-/*
- * Side navigations
- */
-
-.tsd-navigation a {
-    border-radius: 8px;
-    padding: 6px;
-}
-
-.tsd-navigation > a {
-    display: none;
-}
-
-/*
- * Type definition groups
- */
-
-.tsd-index-panel,
-.tsd-member-group {
-    background-color: var(--color-background);
-    padding: 16px;
-    border: 1px var(--color-accent) solid;
-    border-radius: 6px;
-}
-
-.tsd-panel > h1,
-.tsd-panel > h2,
-.tsd-panel > h3 {
-    margin-top: 0px;
-}
-
-.tsd-panel-group.tsd-index-group details {
-    margin: 0px;
-}
-
-.tsd-member-group .tsd-member:last-child {
-    margin-bottom: 0px;
-}
-
-.tsd-signature {
-    border: 1px solid var(--color-accent);
-    border-radius: 6px;
-}
-
-.tsd-signatures .tsd-signature {
-    border-color: var(--color-accent);
-    border-radius: 0px;
-}
-
-.tsd-description .tsd-signatures .tsd-signature {
-    border-radius: 6px;
-}
-
-.tsd-full-hierarchy:not(:last-child) {
-    border-bottom: var(--color-accent);
 }
 
 /*
