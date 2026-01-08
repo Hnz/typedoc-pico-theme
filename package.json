@@ -1,12 +1,13 @@
 {
     "name": "typedoc-pico-theme",
-    "description": "Typedoc theme based on pico css",
+    "description": "TypeDoc Theme based on PicoCSS",
     "version": "1.0.0",
     "license": "MIT",
     "author": "Hans van Leeuwen",
     "homepage": "https://github.com/hnz/typedoc-pico-theme",
     "main": "dist/index.js",
     "type": "module",
+    "files": ["./dist"],
     "dependencies": {
         "typedoc": "^0.28.15"
     },
@@ -17,7 +18,7 @@
         "typedoc-theme"
     ],
     "devDependencies": {
-        "@types/node": "22",
+        "@types/node": "22.18",
         "typescript": "^5.9.3"
     }
 }
