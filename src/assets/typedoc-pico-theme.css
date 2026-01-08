@@ -365,3 +365,11 @@ footer p {
 .tsd-breadcrumb a {
     color: rgb(186.75, 150.5, 43.75);
 }
+
+/*
+ * Hide first textbar element
+ */
+
+.tsd-navigation > a {
+    display: none;
+}
