@@ -1,14 +1,14 @@
-# Theme your TypeDoc like pico
+# typedoc-pico-theme
 
 [![NPM](https://nodei.co/npm/typedoc-pico-theme.png)](https://npmjs.org/package/typedoc-pico-theme)
 
-[TypeDoc](https://typedoc.org/) theme based on [Pico CSS](https://picocss.com).
+[TypeDoc](https://typedoc.org/) theme based on [PicoCSS](https://picocss.com).
 
-See [example](https://hnz.github.io/typedoc-pico-theme/).
+See the [example project](https://hnz.github.io/typedoc-pico-theme/).
 
 ## Usage
 
-**Install the package with your favourite package manager:**
+Install the package with your favourite package manager:
 
 ```text
 npm install typedoc-pico-theme --save-dev
@@ -22,17 +22,17 @@ pnpm add typedoc-pico-theme --save-dev
 yarn add typedoc-pico-theme --dev
 ```
 
-**Use the theme when generating your documentation:**
+Use the theme when generating your documentation:
 
 ```text
 npx typedoc src --plugin typedoc-pico-theme
 ```
 
-**Or add it to your typedoc.json:**
+Or add it to your *typedoc.json*:
 
-```
+```javascript
 {
   // ...
-  "plugin": ["typedoc-plugin-mdn-links", "typedoc-pico-theme"]
+  "plugin": ["typedoc-pico-theme"]
 }
 ```
