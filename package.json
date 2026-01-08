@@ -1,7 +1,7 @@
 {
     "name": "typedoc-pico-theme",
     "description": "TypeDoc Theme based on PicoCSS",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "author": "Hans van Leeuwen",
     "homepage": "https://github.com/hnz/typedoc-pico-theme",
