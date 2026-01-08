@@ -41,7 +41,7 @@ jobs:
       - name: 🔨 Build docs
         run: git clone --depth 1 https://github.com/TypeStrong/typedoc.git
 
-      - run: npx typedoc --plugin ../../dist/index.js
+      - run: npm i && npx typedoc --plugin ../../dist/index.js
         working-directory: typedoc/example
 
       - name: ⚙️ Configure pages
