@@ -1,4 +1,3 @@
-# typedoc-pico-theme
 
 [![NPM](https://nodei.co/npm/typedoc-pico-theme.png)](https://npmjs.org/package/typedoc-pico-theme)
 
@@ -36,3 +35,12 @@ Or add it to your *typedoc.json*:
   "plugin": ["typedoc-pico-theme"]
 }
 ```
+
+## Contributing
+
+Got a question?
+Found a bug?
+Create an [issue](https://github.com/Hnz/typedoc-pico-theme/issues).
+
+Contributions are most welcome!
+Please create a [pull request](https://github.com/Hnz/typedoc-pico-theme/pulls).
