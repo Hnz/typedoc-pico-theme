@@ -1,10 +1,8 @@
 name: ☁️ Release NPM
 
 on:
-  workflow_dispatch:
   push:
-    tags:
-      - 'v*'
+    branches: main
 
 jobs:
   npm:
@@ -13,7 +11,7 @@ jobs:
 
     permissions:
       id-token: write
-      contents: write
+      contents: read
 
     steps:
       - name: 📥 Checkout code
@@ -22,7 +20,7 @@ jobs:
       - name: 🛠️ Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 22.18
 
       - name: ⚡ Install dependencies
         run: npm ci
@@ -31,4 +29,4 @@ jobs:
         run: npm build
 
       - name: ☁️ Publish to NPM
-        run: npm publish --ignore-scripts
+        uses: JS-DevTools/npm-publish@v4
