@@ -4,9 +4,7 @@
 
 [TypeDoc](https://typedoc.org/) theme based on [Pico CSS](https://picocss.com).
 
-## Example
-
-[example](https://hnz.github.io/typedoc-pico-theme/)
+See [example](https://hnz.github.io/typedoc-pico-theme/).
 
 ## Usage
 
@@ -32,7 +30,7 @@ npx typedoc src --plugin typedoc-pico-theme
 
 **Or add it to your typedoc.json:**
 
-```json
+```
 {
   // ...
   "plugin": ["typedoc-plugin-mdn-links", "typedoc-pico-theme"]
