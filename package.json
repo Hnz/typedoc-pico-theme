@@ -5,6 +5,10 @@
     "license": "MIT",
     "author": "Hans van Leeuwen",
     "homepage": "https://github.com/hnz/typedoc-pico-theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Hnz/typedoc-pico-theme"
+    },
     "main": "dist/index.js",
     "type": "module",
     "files": [
